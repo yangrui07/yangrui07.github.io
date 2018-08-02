@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 2015-12-12 磨房南京50KM徒步
 <br>
-<img src="/assets/nj.jpg" width="300" height="500">
+<img src="/assets/nj.jpg">
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
