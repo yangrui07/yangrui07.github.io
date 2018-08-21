@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "我的运动记录3"
-date:   2018-08-06 11:52:49 +0800
+title:  "2018-08-21-CSS3-创建不规则图形"
+date:   2018-08-21 15:40:00 +0800
 categories: jekyll update
 ---
-2015-11-19 磨房南京50KM徒步
-<br>
-<img src="/assets/nj.jpg">
+<h1>神奇的clip-path</h1>
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
