@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "2018-08-21-CSS3-创建不规则图形"
+title:  "CSS3-创建不规则图形"
 date:   2018-08-21 15:40:00 +0800
 categories: jekyll update
 ---
