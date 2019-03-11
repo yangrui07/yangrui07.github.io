@@ -49,7 +49,6 @@ $ echo 'export PATH=/usr/local/Cellar/ruby/1.9.3-p0/bin:$PATH' >> ~/.bash_profil
 {% endhighlight %}
 <p>本地执行Jekyll 时报错</p>
 {% highlight ruby %}
-Error:
 	jekyll 3.4.0 | Error:  Operation not supported on socket @ rb_sysopen - /Users/ruiy/Library/Application Support/Google/Chrome/App Shim Socket
 {% endhighlight %}
 <p>这个问题是因为没有进入到Jekyll目录执行jekyll serve</p>
