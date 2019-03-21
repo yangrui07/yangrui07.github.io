@@ -25,7 +25,7 @@ $ gem install jekyll bundler
 <h1>3、本地创建Jekyll文件</h1>
  {% highlight ruby %}
 $ bundle exec Jekyll serve
- {% highlight ruby %}
+ {% endhighlight %}
 
  <h1>4、提交到Github上</h1>
  {% highlight ruby %}
