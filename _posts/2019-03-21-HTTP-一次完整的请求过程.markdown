@@ -1,58 +1,58 @@
 ---
 layout: post
-title:  "HTTP-一次完整的请求过程"
+title:  "一次完整的HTTP请求过程"
 date:   2019-03-21 16:46:00 +0800
 categories: jekyll update
 ---
 <h2>前言</h2>
 <p>因为有次面试被问到HTTP请求过程，所以回来又重温了一遍并把过程记录下来</p>
 
-<h4>一次完整的HTTP请求所经历的7个步骤</h4>
+<h3>一次完整的HTTP请求所经历的7个步骤</h3>
 <ul>
 	<li>
-	<p><strong>1、建立TCP连接</strong></p>
+	<p><strong>建立TCP连接</strong></p>
 	<p>在HTTP工作开始之前，Web浏览器首先要通过网络与Web服务器建立连接，该连接通过TCP完成，该协议与IP协议共同构建Internet</p>
 	</li>
 	<li>
-	<p><strong>2、Web浏览器向服务器发送请求行</strong></p>
+	<p><strong>Web浏览器向服务器发送请求行</strong></p>
 	<p>例如：GET /sample/hello.jsp  HTTP/1.1</p>
 	</li>
 	<li>
-	<p><strong>3、Web浏览器发送请求头</strong></p>
+	<p><strong>Web浏览器发送请求头</strong></p>
 	<p>浏览器发送其他命令之后，还要以头信息的形式向Web服务器发送一些别的信息，之后浏览器发送了一行空白行来通知服务器，它已经结束了该头消息的发送</p>
 	</li>
 	<li>
-	<p><strong>4、Web服务器应答</strong></p>
+	<p><strong>Web服务器应答</strong></p>
 	<p>客户机向服务器发出请求后，服务器会像客户机回送应答，HTTP/1.1 200 OK，应答的第一部分是协议的版本号和应答状态码</p>
 	</li>
 	<li>
-	<p><strong>5、Web服务器发送应答头</strong></p>
+	<p><strong>Web服务器发送应答头</strong></p>
 	<p>正如客户端会随请求发送自身的信息一样，服务器也会随同应答向用户发送关于它自己的数据及别请求的文档</p>
 	</li>
 	<li>
-	<p><strong>6、Web服务器向浏览器发送数据</strong></p>
+	<p><strong>Web服务器向浏览器发送数据</strong></p>
 	<p>服务器向浏览器发送头信息后，它会发送一个空白行来表示头信息的发送到此结束，接着它就以<em>Content-Type</em>应答头信息所描述的格式发送用户所请求的实际数据</p>
 	</li>
 	<li>
-	<p><strong>7、Web服务器关闭TCP连接</strong></p>
+	<p><strong>Web服务器关闭TCP连接</strong></p>
 	<p>一般情况下，一旦Web服务器向浏览器发送了请求数据，它就要关闭TCP连接。如果浏览器或者服务器在其头信息加入了这行代码：</p>
-	{% highlight ruby %}
-	Connection:keep-alive 
-	{% endhighlight %}
+{% highlight ruby %}
+Connection:keep-alive 
+{% endhighlight %}
 	<p>TCP连接在发送后将仍然保持打开状态，于是，浏览器可以继续通过相同的连接发送请求。保持连接节省了为每个请求建立新连接所需的时间，还节约了网络带宽。</p>
 	</li>
 </ul>
 <h4>总结：</h4>
 <p>建立TCP连接->发送请求行->发送请求头->（到达服务器）发送状态行->发送响应头->发送响应数据->断TCP连接</p>
 
-常见的HTTP相应状态码
-200：请求被正常处理
-400：请求报文语法错误，服务器无法识别
-401：请求需要认证
-403：请求对应的资源禁止被访问
-404：服务器无法找到对应的资源
-500：服务器内部错误
-503：服务器正忙
+<h4>常见的HTTP相应状态码</h4>
+200：请求被正常处理<br>
+400：请求报文语法错误，服务器无法识别<br>
+401：请求需要认证<br>
+403：请求对应的资源禁止被访问<br>
+404：服务器无法找到对应的资源<br>
+500：服务器内部错误<br>
+503：服务器正忙<br>
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
