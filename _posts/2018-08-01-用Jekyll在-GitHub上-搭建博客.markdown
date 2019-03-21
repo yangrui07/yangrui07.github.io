@@ -15,12 +15,12 @@ categories: jekyll update
 然后安装 Ruby
  {% highlight ruby %}
  $ brew install ruby
- {% highlight ruby %}
+ {% endhighlight %}
 
 <h1>2、安装Jekyll</h1>
  {% highlight ruby %}
 $ gem install jekyll bundler
- {% highlight ruby %}
+ {% endhighlight %}
 
 <h1>3、本地创建Jekyll文件</h1>
  {% highlight ruby %}
@@ -33,7 +33,7 @@ $ git pull origin master
 $ git add .
 $ git commit -am"update info"
 $ git push origin master
- {% highlight ruby %}
+ {% endhighlight %}
 
 <h2 style="color:red">遇到的问题以及解决办法</h2>
 <p>安装完Ruby后系统会有两个Ruby，为了解决冲突，因此我们需要修改其路径。</p>
