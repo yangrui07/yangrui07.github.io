@@ -12,7 +12,7 @@ categories: jekyll update
 {% highlight ruby %}
 background:linear-gradient(#fb3, #58a);
 {% endhighlight %}
-<img src="/assets/linear-gradient.jpg" style="background-origin: 0 0" width="300" height="198">
+<img src="/assets/linear-gradient.jpg" style="background-position: -300px -198px" width="300" height="198">
 如果将两种颜色的过渡点调的更近一些：
 {% highlight ruby %}
 background:linear-gradient(#fb3 20%, #58a 80%);
