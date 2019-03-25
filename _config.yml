@@ -16,7 +16,7 @@
 title: 开心果的博客
 email: ruiyyang@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  我在用博客记录前端技术知识、我的运动记录以及关于制作美食烘焙等信息。
+  我在用博客记录前端一些技术知识，包括HTML、CSS、JavaScript。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
