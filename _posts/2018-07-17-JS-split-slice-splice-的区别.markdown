@@ -9,7 +9,7 @@ categories: jekyll update
 <ul>
 	<li>
 		<p><strong>split</strong></p>
-		<p>定义：<strong>split</strong>是切割字符串的一种方法，该方法主要用于把一个字符串分割成字符串数组并且返回新生成的数组。用于字符串对象</p>
+		<p>定义：该方法是切割字符串的一种方法，该方法主要用于把一个字符串分割成字符串数组并且返回新生成的数组。用于字符串对象</p>
 		<p>语法：<br>
 		{% highlight ruby %}str.split(separator,howmany){% endhighlight %}</p>
 		<table>
@@ -39,7 +39,7 @@ console.log(arr);// how,are,you
 	</li>
 	<li>
 		<p><strong>slice</strong></p>
-		<p>定义：<strong>slice</strong>主要用于截取数组，并返回截取到的新数组。数组和字符串对象均可使用。</p>
+		<p>定义：<br>该方法主要用于截取数组，并返回截取到的新数组。</p>
 		<p>语法：<br>
 		{% highlight ruby %}arr.slice(start,end){% endhighlight %}</p>
 		<table>
@@ -62,14 +62,14 @@ console.log(arr);// how,are,you
 		<p>示例：</p>
 {% highlight ruby %}
 var arr1 = ["a", "b", "c", "d", "e", "f"];
- var newArr = arr1.slice(0, 2);
+var newArr = arr1.slice(0, 2);
 console.log(newArr);// a,b
 console.log(arr1.slice(2));// c,d,e,f
 {% endhighlight %}
 	</li>
 	<li>
 		<p><strong>splice</strong></p>
-		<p>定义：<strong>splice</strong>该方法用于向数组中添加项目，或者从数组中删除项目，返回被删除的项目。</p>
+		<p>定义：<br>该方法用于向数组中添加项目，或者从数组中删除项目，返回被删除的项目。</p>
 		<p>语法：<br>
 		{% highlight ruby %}arr.splice(index,howmany,item1,......,itemX){% endhighlight %}</p>
 		<table>
@@ -103,7 +103,7 @@ console.log(detailed);// b,c
 <p>添加示例：</p>
 {% highlight ruby %}
 var arr1 = ["a", "b", "c", "d", "e", "f"];
- var newArr = arr1.splice(1, 0,"m","n"); //因为第2参数为0，所以表示添加元素：从下标为1的位置插入元素。其余的元素会自动向后移动
+var newArr = arr1.splice(1, 0,"m","n"); //因为第2参数为0，所以表示添加元素：从下标为1的位置插入元素。其余的元素会自动向后移动
 console.log(arr1);// a,m,n,b,c,d,e,f
 {% endhighlight %}
 	</li>
