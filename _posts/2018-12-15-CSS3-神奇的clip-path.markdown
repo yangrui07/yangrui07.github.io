@@ -7,7 +7,7 @@ categories: jekyll update
 
 <h1>前言</h1>
 <div>之所以了解到clip-path这个属性，是因为做兼职时接到了一组动画效果。计划全部用CSS3的transition、transform、rotate等来实现，其中一个效果中文字显示像百叶窗一样，原以为实现起来很简单，可后来足足想了两天，各种Google、Baidu也没找到实现方式。然而一次刷博客，偶遇了CSS3的新属性——clip-path，灵光一现，可以用此属性来创建不规则图形，将此图形以右上角为起点往左逐渐显示文字，最终实现了效果。Happy～</div>
-<div style='background-image: url("/assets/polygon.gif"); background-position: center center;background-size: 80% 80% width: 250px;height: 250px'></div>
+<div style='background-image: url("/assets/polygon.gif"); background-position: center center;background-size: 80% 80%;background-repeat: no-repeat; width: 250px;height: 250px'></div>
 <h1>clip-path语法</h1>
 <div>
 {% highlight ruby %}
