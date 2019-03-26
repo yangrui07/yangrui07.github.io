@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "用Jekyll在 GitHub上 搭建博客"
-date:   2018-08-02 16:46:00 +0800
+date:   2018-08-05 16:46:00 +0800
 categories: jekyll update
 ---
 搭建平台：macOS Mojave v10.14.3

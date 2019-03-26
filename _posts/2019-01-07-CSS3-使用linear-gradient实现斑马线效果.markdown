@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用linear-gradient实现斑马线效果"
-date:   2019-03-07 17:46:00 +0800
+date:   2019-01-07 17:46:00 +0800
 categories: jekyll update
 ---
 <h2>前言</h2>

@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  "CSS3-神奇的clip-path"
-date:   2018-08-21 15:40:00 +0800
+date:   2018-12-15 15:40:00 +0800
 categories: jekyll update
 ---
 
 <h1>前言</h1>
 <div>之所以了解到clip-path这个属性，是因为做兼职时接到了一组动画效果。计划全部用CSS3的transition、transform、rotate等来实现，其中一个效果中文字显示像百叶窗一样，原以为实现起来很简单，可后来足足想了两天，各种Google、Baidu也没找到实现方式。然而一次刷博客，偶遇了CSS3的新属性——clip-path，灵光一现，可以用此属性来创建不规则图形，将此图形以右上角为起点往左逐渐显示文字，最终实现了效果。Happy～</div>
-<img src="polygon.gif" width="220" height="220"><br>
+<img src="/assets/polygon.gif" width="220" height="220"><br>
 <h1>clip-path语法</h1>
 <div>
 {% highlight ruby %}
@@ -26,7 +26,7 @@ clip-path: <clip-source> | [ <basic-shape> || <geometry-box> ] | none
 div{clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);}
 {% endhighlight %}
 <p>见证奇迹的时刻，神奇的clip-path应用于这段代码，我们将看到一个菱形。这主要取决于函数顶点的值。下图将说明一切：</p>
-<img src="polygon.png" width="300" height="300"><br>
+<img src="/assets/lpolygon.png" width="300" height="300"><br>
 <p>以前绘制三角形、五角形会使用 伪类 `:before`和 `:after`，现在使用`clip-path`就可以轻松搞定😉</p>
 <h1>浏览器兼容性</h1>
 <p>IE和Edge不支持这个属性。Firefox仅部分支持。Chrome、Safari和Opera需要使用`-webkit-`前缀支持此属性。</p>
