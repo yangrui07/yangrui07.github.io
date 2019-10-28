@@ -9,7 +9,6 @@ categories: jekyll update
 <p>打开Terminal，输入命令：</p>
 {% highlight ruby %}
  $ cd ~/.ssh
- {% highlight ruby %}
  $ ssh-keygen
  {% endhighlight %}
  <p>会在 `.ssh`文件中生成 `id_rsa.pub`，将此文件内容（ssh key）添加到Github中，Github主页-账号-设置-SSH-New SSH Key</p>
@@ -23,7 +22,7 @@ $ git clone git@github.com:yangrui07/yangrui07.github.io.git
 $ cd /Documments/Github/myblog
 $ git add .
 $ git commit -am"update info"
-$git push origin master
+$ git push origin master
  {% endhighlight %}
  <p>此时执行Git命令需要在.git父级目录下执行</p>
 
