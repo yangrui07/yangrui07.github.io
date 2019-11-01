@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "2019-11-01-CSS-水平垂直居中.markdown"
+date:   2019-11-01 11:06:00 +0800
+categories: jekyll update
+---
+<h1>1、Flex布局</h1>
+{% highlight ruby %}
+$父容器
+ $ display:flex;
+ $ justify-content:center;
+ $ align-items:center;
+ {% endhighlight %}
+ <p>优点：布局灵活，更加有效的方式对容器中的子元素进行排列、对齐</p>
+  <p>缺点：CSS3新属性，浏览器兼容性不好</p>
+<h1>2、Position布局</h1>
+ {% highlight ruby %}
+$ 父容器
+$ position:relative;
+$ 子容器
+$ position:absolute;
+$ margin:auto;
+$ top:0;
+$ bottom:0;
+$ left:0;
+$ right:0;
+ {% endhighlight %}
+ <p>优点：布局简单，易懂</p>
+  <p>缺点：子容器的宽度、高度需要可控，因为CSS计算margin时需要参考尺寸值</p>
+<h1>3、Position + transform反向偏移 </h1>
+ {% highlight ruby %}
+$ 父容器
+$ position:relative;
+$ 子容器
+$ position:absolute;
+$ top:50%;
+$ left:50%;
+$ transform:translate(-50%, -50%);
+ {% endhighlight %}
+ <p>优点：实现原理同方案2一样，不同点是该方案使用transform做反向偏移，不过transform的计算基准是元素本身</p>
+  <p>缺点：此方案的子容器的宽度、高度也需要可控，CSS计算transform时需要自身元素尺寸值</p>
+<h1>4、Table布局 </h1>
+ {% highlight ruby %}
+$ 父容器
+$ display:table;
+$ 子容器
+$ display:table-cell;
+$ vertical-align:middle;
+$ text-align:center;
+$ 子容器内容
+$ display:inline-block;
+ {% endhighlight %}
+ <p>优点：实现效果比较好，剧中块可做包裹性，还可兼容各主流浏览器</p>
+  <p>缺点：增加了一层table-cell层来实现垂直居中</p>
+
+ 
