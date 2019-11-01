@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "2019-11-01-CSS-水平垂直居中.markdown"
+title:  "CSS-元素水平垂直居中"
 date:   2019-11-01 11:06:00 +0800
 categories: jekyll update
 ---
 <h1>1、Flex布局</h1>
 {% highlight ruby %}
-$父容器
+ $ 父容器
  $ display:flex;
  $ justify-content:center;
  $ align-items:center;
@@ -47,7 +47,7 @@ $ 子容器
 $ display:table-cell;
 $ vertical-align:middle;
 $ text-align:center;
-$ 子容器内容
+$ 子容器内容块
 $ display:inline-block;
  {% endhighlight %}
  <p>优点：实现效果比较好，剧中块可做包裹性，还可兼容各主流浏览器</p>
