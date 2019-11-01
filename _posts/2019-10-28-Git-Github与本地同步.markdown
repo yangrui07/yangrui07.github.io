@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Git使用-Github项目下载至本地-本地项目上传到GitHub.markdown"
+title:  "Github项目下载至本地-本地项目上传到GitHub.markdown"
 date:   2019-10-25 16:46:00 +0800
 categories: jekyll update
 ---

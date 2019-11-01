@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JavaScript-将字符串转换为驼峰命名的字符串.markdown.markdown"
+title:  "JavaScript-将字符串转换为驼峰命名的字符串.markdown"
 date:   2019-09-17 08:46:00 +0800
 categories: jekyll update
 ---

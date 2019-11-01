@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "JS中split,slice,splice的区别"
+title:  "split-slice-splice-的区别"
 date:   2018-09-17 08:40:00 +0800
 categories: jekyll update
 ---
