@@ -87,6 +87,8 @@ $ Object.prototype.toString.call(null) -> [object Null]
 $ Object.prototype.toString.call(undefined) -> [object Undefined]
 $ Object.prototype.toString.call(new Date()) -> [object Date]
 $ Object.prototype.toString.call(new Function()) -> [object Function]
+$ Object.prototype.toString.call({}}) -> [object Object]
+$ Object.prototype.toString.call(new Object()) -> [object Object]
  {% endhighlight %}
  <p>全能方法，可准确判断出数据类型</p>
 <h1>4、总结 </h1>
