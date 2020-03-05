@@ -15,7 +15,6 @@ categories: jekyll update
     <li>object</li>
 </ul>
 {% highlight ruby %}
- $ 父容器
  $ typeof 1 -> number
  $ typeof '' -> string
  $ typeof true -> boolean
@@ -86,11 +85,10 @@ $ Object.prototype.toString.call('') -> [object String]
 $ Object.prototype.toString.call(true) -> [object Boolean]
 $ Object.prototype.toString.call(null) -> [object Null]
 $ Object.prototype.toString.call(undefined) -> [object Undefined]
-$ Object.prototype.toString.call(true) -> [object Boolean]
 $ Object.prototype.toString.call(new Date()) -> [object Date]
 $ Object.prototype.toString.call(new Function()) -> [object Function]
  {% endhighlight %}
- <p>全能方法，可准确判断出各种类型</p>
+ <p>全能方法，可准确判断出数据类型</p>
 <h1>4、总结 </h1>
 <table>
     <thead>
