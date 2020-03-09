@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "神奇的clip-path"
+title:  "CSS3-神奇的clip-path"
 date:   2018-12-15 15:40:00 +0800
 categories: jekyll update
 ---
